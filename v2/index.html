@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Factory Direct · The story · Meesho C2M prototype</title>
+<meta name="description" content="Factory Direct as a scroll story: bring a proven product to its factory, not a cold catalogue to the app. Team Violet, Meesho DICE Challenge 3.0.">
+<meta name="theme-color" content="#9F2089">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta:wght@500;700;800&family=Mulish:wght@500;600;700;800;900&display=swap">
+<link rel="stylesheet" href="story.css">
+</head>
+<body>
+<header class="bar">
+  <a class="brand" href="../" aria-label="All variants"><span class="wm">meesho</span><span class="sep"></span><span class="p">Factory Direct</span></a>
+  <nav class="chapters" id="chapters" aria-label="Chapters"></nav>
+  <span class="keys"><kbd>←</kbd><kbd>→</kbd> or <kbd>Space</kbd></span>
+</header>
+<div class="progress" id="progress"></div>
+
+<section class="hero" id="hero">
+  <div class="eyebrow">Meesho C2M · Team Violet · DICE Challenge 3.0</div>
+  <div class="big num">₹<span class="strike">381</span></div>
+  <h1>is what a buyer pays today for a 240 TC bedsheet set. <em>₹38 of it doesn't need to be there.</em></h1>
+  <p class="sub">Factory Direct brings a proven product to its factory, not a cold catalogue to the app. Here is how, one step at a time.</p>
+  <button class="cue" id="cue"><i></i>Scroll to begin</button>
+  <div class="meta">Working prototype · light story edition<br>Sample data marked "illustrative"</div>
+</section>
+
+<main class="story">
+  <div class="steps" id="steps"></div>
+  <div class="stage-col" aria-hidden="false">
+    <div class="stage">
+      <div class="frame">
+        <div class="chrome" id="f-chrome" hidden><span class="dots"><i></i><i></i><i></i></span><span class="url" id="f-url"></span><span class="tag" id="f-tag"></span></div>
+        <div class="scenes" id="scenes"></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<section class="close" id="close">
+  <div class="eyebrow">Close</div>
+  <h2>Meesho never holds stock, <em>sets a price</em> or brands a product.</h2>
+  <p class="sub" style="margin-top:20px;font-size:19px;color:var(--ink-2);max-width:56ch">It routes demand it already has to the factory that makes the product, checks the spec in the factory's own town and reads every batch by rule.</p>
+  <div class="lbl" style="margin-top:36px">What a factory never gets</div>
+  <div class="never"><span>cash</span><span>ad credit</span><span>a ranking boost</span><span>a guarantee of orders</span><span>an account manager</span></div>
+  <div class="loopline"><span>Product first</span>→<span>Factory second</span>→<span>Cluster third</span>→<span>Reorder on its own money</span></div>
+  <div class="credit"><span><b>Team Violet</b> · Meesho DICE Challenge 3.0 · Business Track</span><span>Prototype, not an official Meesho product · <a href="../" style="color:var(--m-primary);font-weight:800;text-decoration:none">Other ways to walk through it →</a></span></div>
+</section>
+
+<script src="../assets/data.js"></script>
+<script src="story.js"></script>
+</body>
+</html>

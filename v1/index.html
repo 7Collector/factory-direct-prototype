@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Factory Direct · Keynote</title>
+<meta name="description" content="Factory Direct, told as a keynote: thirteen chapters, each with a live product screen. Team Violet, Meesho DICE Challenge 3.0.">
+<meta name="theme-color" content="#9F2089">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta:wght@500;600;700;800&family=Mulish:wght@500;600;700;800;900&display=swap">
+<link rel="stylesheet" href="story.css">
+</head>
+<body>
+<div id="viewport">
+  <div id="stage" role="region" aria-roledescription="presentation" aria-label="Factory Direct keynote">
+    <header class="topbar">
+      <a class="brand" href="../" title="All variants" style="text-decoration:none;color:inherit"><span class="wm">meesho</span><span class="sep"></span><span class="pd">Factory Direct</span></a>
+      <div class="tools">
+        <button class="tool" id="t-notes" title="Speaker notes">Notes<kbd>N</kbd></button>
+        <button class="tool" id="t-full" title="Fullscreen">Full<kbd>F</kbd></button>
+        <span class="counter num keep-m" id="counter" aria-live="polite"></span>
+      </div>
+    </header>
+    <main class="slides" id="slides"></main>
+    <nav class="rail" aria-label="Chapters">
+      <button class="navb" id="prev" aria-label="Previous slide"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <div class="dots" id="dots"></div>
+      <span class="chap" id="chap"></span>
+      <button class="navb" id="next" aria-label="Next slide"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>
+    </nav>
+  </div>
+</div>
+<aside id="notes" aria-live="polite" aria-hidden="true">
+  <div class="h"><span id="notes-t">Speaker notes</span><span class="faint">N to hide</span></div>
+  <p id="notes-p"></p>
+  <small id="notes-s"></small>
+</aside>
+<script src="../assets/data.js"></script>
+<script src="story.js"></script>
+</body>
+</html>

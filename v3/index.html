@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Follow the bedsheet · Factory Direct · Meesho C2M</title>
+<meta name="description" content="Follow one 240 TC double bedsheet set from Meesho's data to a Panipat factory, the Cluster Hub, a buyer's home and back to the reorder. Team Violet, Meesho DICE Challenge 3.0.">
+<meta name="theme-color" content="#9F2089">
+<meta property="og:title" content="Follow the bedsheet · Factory Direct">
+<meta property="og:image" content="https://7collector.github.io/factory-direct-prototype/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta:wght@500;600;700;800&family=Mulish:wght@500;600;700;800;900&display=swap">
+<link rel="stylesheet" href="story.css">
+</head>
+<body data-tone="today">
+<div class="app">
+  <header class="top">
+    <a class="wm" href="../" title="All versions">meesho</a><span class="sep"></span>
+    <span class="ttl">Factory Direct<small>FOLLOW THE BEDSHEET · C2M PROTOTYPE</small></span>
+    <span class="sp"></span>
+    <span class="count num" id="count" aria-live="polite">1 / 12</span>
+    <a class="app-link hide-m" href="../explore.html" title="Every screen, free to explore">Full app ↗</a>
+    <button class="btn ghost sm" id="btn-notes" aria-pressed="false" title="Talk track (N)"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h14v16H5zM9 9h6M9 13h6M9 17h3"/></svg><span class="hide-m">Talk track</span></button>
+  </header>
+
+  <nav class="route" id="route" aria-label="Route of the bedsheet">
+    <svg id="route-svg" width="100%" height="100%" aria-hidden="true"></svg>
+    <div id="stops"></div>
+  </nav>
+
+  <main class="scene" id="scene" aria-live="polite"></main>
+
+  <footer class="nav">
+    <button class="btn line sm" id="prev" aria-label="Previous (←)"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span class="hide-m">Back</span></button>
+    <div class="mid"><div class="beats" id="beats" role="group" aria-label="Beats"></div></div>
+    <span class="foot hide-m">Personas, Hub queues and pilot reads are illustrative · scenario numbers follow the deck</span>
+    <div class="nextwrap">
+      <div class="hint" id="hint"><kbd>→</kbd> to begin the journey</div>
+      <button class="btn" id="next" aria-label="Next (→)">Next</button>
+    </div>
+  </footer>
+</div>
+
+<aside class="notes" id="notes" aria-hidden="true">
+  <div class="row between"><b id="notes-t">Talk track</b><button class="btn ghost sm" id="notes-x" aria-label="Close talk track">Close · N</button></div>
+  <p id="notes-b"></p>
+  <div class="keys"><kbd>→</kbd> <kbd>Space</kbd> next · <kbd>←</kbd> back · <kbd>N</kbd> notes · <kbd>F</kbd> fullscreen</div>
+</aside>
+
+<script src="../assets/data.js"></script>
+<script src="story.js"></script>
+</body>
+</html>

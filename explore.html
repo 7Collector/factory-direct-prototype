@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Factory Direct · Meesho C2M</title>
+<meta name="description" content="Factory Direct: a working prototype for growing Meesho's consumer-to-manufacturer (C2M) seller base. Demand Cards, Cluster Hubs and rule-based reads. Team Violet, Meesho DICE Challenge 3.0.">
+<meta name="theme-color" content="#570A57">
+<meta property="og:title" content="Factory Direct · Meesho C2M prototype">
+<meta property="og:description" content="Bring a proven product to its factory, not a cold catalogue to the app. ₹381 → ₹345 all-in, and the factory still beats wholesale.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&family=Mukta:wght@500;600;700;800&display=swap">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<header class="appbar">
+  <div class="in">
+    <a class="logo" href="./" aria-label="Factory Direct home">
+      <span class="wm">meesho</span><span class="sep"></span>
+      <span class="prod">Factory Direct<small>C2M PROTOTYPE</small></span>
+    </a>
+    <nav class="tabs" aria-label="Screens">
+      <a href="#/" data-r="overview">Overview <span class="k">1</span></a>
+      <a href="#/factory" data-r="factory">Supplier Panel <span class="k">2</span></a>
+      <a href="#/hub" data-r="hub">Cluster Hub <span class="k">3</span></a>
+      <a href="#/buyer" data-r="buyer">Buyer App <span class="k">4</span></a>
+      <a href="#/console" data-r="console">C2M Console <span class="k">5</span></a>
+    </nav>
+    <div class="right">
+      <button class="btn ghost sm" id="btn-reset" title="Reset demo state" aria-label="Reset demo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4v6h6"/><path d="M20 12a8 8 0 10-2.3 5.7M4 10a8 8 0 011.8-3"/></svg></button>
+      <button class="btn sm" id="btn-tour"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5l12 7-12 7z"/></svg><span>Guided demo</span></button>
+    </div>
+  </div>
+</header>
+
+<main class="page" id="main"></main>
+
+<footer class="foot">
+  <span>Prototype by Team Violet (Rakshit Rajendra) for the Meesho DICE Challenge 3.0 semi-finale. Not an official Meesho product.</span>
+  <span>Factory names and pilot reads are illustrative sample data. The ₹381 → ₹345 scenario, rate-card ranges and rules follow the detailed deck.</span>
+</footer>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Settlement calculator"></aside>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-hidden="true"></div>
+<div class="tour" id="tour" role="dialog" aria-live="polite" aria-label="Guided demo"></div>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+
+<noscript><p style="padding:24px">This prototype needs JavaScript.</p></noscript>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/views.js"></script>
+</body>
+</html>
